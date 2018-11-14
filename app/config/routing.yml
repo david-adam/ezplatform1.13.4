@@ -44,3 +44,6 @@ _ezpublishLegacyRoutes:
 
 _netgen_admin_ui:
     resource: "@NetgenAdminUIBundle/Resources/config/routing.yml"
+
+_netgen_information_collection:
+    resource: '@NetgenInformationCollectionBundle/Resources/config/routing.yml'

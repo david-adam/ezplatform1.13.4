@@ -68,6 +68,7 @@ class AppKernel extends Kernel
         $bundles[] = new Lolautruche\EzCoreExtraBundle\EzCoreExtraBundle();
         $bundles[] = new Netgen\Bundle\AdminUIBundle\NetgenAdminUIBundle();
         $bundles[] = new Netgen\Bundle\EzFormsBundle\NetgenEzFormsBundle();
+        $bundles[] = new Netgen\Bundle\InformationCollectionBundle\NetgenInformationCollectionBundle();
 
         return $bundles;
     }

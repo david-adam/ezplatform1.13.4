@@ -134,3 +134,8 @@ fos_http_cache:
                         public: true
                         max_age: 0
                         s_maxage: 20
+
+doctrine:
+    orm:
+        auto_mapping: true
+

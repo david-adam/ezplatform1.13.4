@@ -48,3 +48,20 @@ ez_publish_legacy:
 
 imports:
     - { resource: ngadminui.yml }
+
+netgen_information_collection:
+    system:
+        default:
+            action_config:
+                email:
+                    templates:
+                        default: 'AcmeBundle:email:default.html.twig'
+                    default_variables:
+                        sender: 'sender@example.com'
+                        recipient: 'recipient@example.com'
+                        subject: 'Subject'
+            actions:
+                default:
+                    - email
+                    - database
+
