@@ -51,3 +51,4 @@ behat.yml
 .php_cs.cache
 auth.json
 ide-twig.json
+.DS_Store

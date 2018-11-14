@@ -64,6 +64,11 @@ class AppKernel extends Kernel
                 $bundles[] = new Egulias\ListenersDebugCommandBundle\EguliasListenersDebugCommandBundle();
         }
 
+        $bundles[] = new eZ\Bundle\EzPublishLegacyBundle\EzPublishLegacyBundle( $this );
+        $bundles[] = new Lolautruche\EzCoreExtraBundle\EzCoreExtraBundle();
+        $bundles[] = new Netgen\Bundle\AdminUIBundle\NetgenAdminUIBundle();
+        $bundles[] = new Netgen\Bundle\EzFormsBundle\NetgenEzFormsBundle();
+
         return $bundles;
     }
 

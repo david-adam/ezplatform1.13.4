@@ -37,3 +37,10 @@ _multiFileUpload:
     resource: '@EzSystemsMultiFileUploadBundle/Resources/config/routing.yml'
     prefix: '%ezpublish_rest.path_prefix%'
 
+# NOTE: Always keep at the end of the file so native symfony routes always have precendence, to avoid legacy
+# REST pattern overriding possible eZ Platform REST routes. 
+_ezpublishLegacyRoutes:
+    resource: @EzPublishLegacyBundle/Resources/config/routing.yml
+
+_netgen_admin_ui:
+    resource: "@NetgenAdminUIBundle/Resources/config/routing.yml"

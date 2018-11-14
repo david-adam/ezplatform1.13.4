@@ -1,0 +1,29 @@
+parameters:
+    netgen_admin_ui.ibl_admin.is_admin_ui_siteaccess: true
+    eztags.ibl_admin.routing.enable_tag_router: false
+    ezsettings.ibl_admin.treemenu.http_cache: false
+ezpublish:
+    siteaccess:
+        list:
+            - ibl_admin
+        groups:
+            ngadminui:
+                - ibl_admin
+        match:
+            Map\URI:
+                ibl_admin: ibl_admin
+    system:
+        ibl_admin:
+            user:
+                layout: '@NetgenAdminUI/pagelayout_login.html.twig'
+                login_template: '@NetgenAdminUI/user/login.html.twig'
+            languages:
+                - eng-GB
+            var_dir: var/site
+            repository: null
+ez_publish_legacy:
+    system:
+        ibl_admin:
+            templating:
+                view_layout: '@NetgenAdminUI/pagelayout_legacy.html.twig'
+                module_layout: '@NetgenAdminUI/pagelayout_module.html.twig'
